@@ -1,1 +1,19 @@
-/* You can add global styles to this file, and also import other style files */
+/* Пример CSS для изменения цвета кнопки */
+.p-button {
+  background-color: blue;
+  border-color: blue;
+}
+
+.p-button:hover {
+  background-color: darkblue;
+  border-color: darkblue;
+}
+
+/* Пример для других элементов */
+.p-inputtext {
+  border-color: blue;
+}
+
+.p-dropdown {
+  border-color: blue;
+}

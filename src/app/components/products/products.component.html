@@ -1,0 +1,28 @@
+<div class="header">
+  <img src="assets/logo.png" alt="Logo" class="logo">
+  <input type="text" pInputText placeholder="Search" class="search-input" />
+  <button pButton type="button" icon="pi pi-plus" label="Добавить товар" class="add-button"></button>
+</div>
+
+<p-table [value]="products">
+  <ng-template pTemplate="header">
+    <tr>
+      <th>Столбец 1</th>
+      <th>Столбец 2</th>
+      <th>Столбец 3</th>
+      <th>Столбец 4</th>
+      <th>Столбец 5</th>
+      <th>Столбец 6</th>
+    </tr>
+  </ng-template>
+  <ng-template pTemplate="body" let-product>
+    <tr>
+      <td>{{product.col1}}</td>
+      <td>{{product.col2}}</td>
+      <td>{{product.col3}}</td>
+      <td>{{product.col4}}</td>
+      <td>{{product.col5}}</td>
+      <td>{{product.col6}}</td>
+    </tr>
+  </ng-template>
+</p-table>
